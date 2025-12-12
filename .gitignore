@@ -1,0 +1,29 @@
+# Katalon Studio
+.cache/
+bin/
+Reports/
+Libs/
+*.class
+*.jar
+drivers/
+build/
+.gradle/
+.settings/
+.classpath
+.project
+tmp/
+*.zip
+!Include/features/
+!Include/scripts/
+!Include/config/
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+*.bak
+*.swp
+*~
+.vscode/
