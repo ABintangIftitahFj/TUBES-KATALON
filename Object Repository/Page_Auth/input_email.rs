@@ -7,8 +7,8 @@
          <value>#email</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'email']</value>
+         <key>XPATH</key>
+         <value>//input[@id='email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

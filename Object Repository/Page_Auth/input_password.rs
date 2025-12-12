@@ -7,8 +7,8 @@
          <value>#password</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'password']</value>
+         <key>XPATH</key>
+         <value>//input[@id='password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
