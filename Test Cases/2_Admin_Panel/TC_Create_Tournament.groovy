@@ -1,10 +1,11 @@
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.model.FailureHandling
 
 // First, login as admin
-WebUI.callTestCase(TestCaseFactory.findTestCase('Test Cases/_Common_Utilities/Login_As_Admin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Cases/_Common_Utilities/Login_As_Admin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // Navigate to tournaments page
 WebUI.click(findTestObject('Object Repository/Page_Admin_Dashboard/menu_tournaments'))

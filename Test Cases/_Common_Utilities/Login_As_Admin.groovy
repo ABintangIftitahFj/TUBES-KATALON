@@ -4,7 +4,7 @@ import internal.GlobalVariable as GlobalVariable
 
 // 1. Open browser to base URL if not already open
 if (WebUI.getWindowTitle() == '') {
-    WebUI.openBrowser(GlobalVariable.G_URL_Web)
+    WebUI.openBrowser('')
 }
 
 // 2. Navigate to /login
