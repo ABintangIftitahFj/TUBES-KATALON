@@ -10,12 +10,12 @@ WebUI.navigateToUrl('http://edsupi.my.id/login')
 // Create email input field
 TestObject emailInput = new TestObject()
 emailInput.addProperty('css', ConditionType.EQUALS, '#email')
-WebUI.setText(emailInput, 'admin@edsupi.my.id')
+WebUI.setText(emailInput, 'admineds123@gmail.com')
 
 // Create password input field
 TestObject passwordInput = new TestObject()
 passwordInput.addProperty('css', ConditionType.EQUALS, '#password')
-WebUI.setText(passwordInput, 'admin123')
+WebUI.setText(passwordInput, 'edsupi123#%')
 
 // Create login button
 TestObject loginButton = new TestObject()
