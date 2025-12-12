@@ -4,7 +4,11 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>input[name=&quot;email&quot;]</value>
+         <value>#email</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

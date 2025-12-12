@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestObject>
-   <name>btn_login</name>
+   <name>msg_error_credentials</name>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[text()='Log in']</value>
+         <value>//div[contains(@class, 'text-red-500')]//li</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>button[type='submit']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

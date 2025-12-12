@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestObject>
-   <name>input_password</name>
+   <name>input_tournament_name</name>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#password</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'password']</value>
+         <value>#name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
