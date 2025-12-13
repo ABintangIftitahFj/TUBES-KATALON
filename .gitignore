@@ -27,3 +27,9 @@ ehthumbs.db
 *.swp
 *~
 .vscode/
+/bin/
+/Libs/
+/.settings/
+/.classpath
+.svn/
+.cache/

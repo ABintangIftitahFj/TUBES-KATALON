@@ -13,9 +13,9 @@ articleLink.addProperty('xpath', ConditionType.EQUALS, '//a[contains(@href,"post
 try {
     WebUI.verifyElementPresent(articleLink, 5)
     WebUI.click(articleLink)
-    WebUI.comment('Article link found and clicked')
+    WebUI.comment("Article link found and clicked")
 } catch (Exception e) {
-    WebUI.comment('No article links found - public page test completed')
+    WebUI.comment("No article links found - public page test completed")
 }
 
 WebUI.closeBrowser()

@@ -2,33 +2,24 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// ===== TC_LOGIN_INVALID - FIXED VERSION =====
-// Step 1: Open Browser
+// Langkah 1: Buka Browser
 WebUI.openBrowser('')
 
-// Step 2: Navigate to login page
+// Langkah 2: Navigasi ke halaman login
 WebUI.navigateToUrl('http://edsupi.my.id/login')
 
-// Step 3: Wait for page to load completely
-WebUI.waitForPageLoad(5)
-
-// Step 4: Fill form with invalid credentials (WITH STABILITY CHECKS)
-// Email Input - Create TestObject and wait for element
+// Langkah 3: Isi form dengan data yang salah
 TestObject emailInput = new TestObject()
 emailInput.addProperty('css', ConditionType.EQUALS, '#email')
-WebUI.waitForElementPresent(emailInput, 10)
 WebUI.setText(emailInput, 'invalid@email.com')
 
-// Password Input - Create TestObject and wait for element  
-TestObject passwordInput = new TestObject()
+TestObject passwordInput = new TestObject()  
 passwordInput.addProperty('css', ConditionType.EQUALS, '#password')
-WebUI.waitForElementPresent(passwordInput, 10)
 WebUI.setText(passwordInput, 'invalidpassword')
 
-// Step 5: Click login button
+// Langkah 4: Klik tombol login
 TestObject loginButton = new TestObject()
 loginButton.addProperty('css', ConditionType.EQUALS, 'button[type="submit"]')
-WebUI.waitForElementPresent(loginButton, 10)
 WebUI.click(loginButton)
 
 // Langkah 5: Verifikasi pesan error muncul (mencoba beberapa selector)

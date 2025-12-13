@@ -8,25 +8,35 @@
       <description></description>
       <initValue>'http://edsupi.my.id'</initValue>
       <name>G_URL_Web</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'admineds123@gmail.com'</initValue>
       <name>G_Admin_Email</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'edsupi123#%'</initValue>
       <name>G_Admin_Pass</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'juri_test@upi.edu'</initValue>
       <name>G_Juri_Email</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>10</initValue>
       <name>G_Timeout</name>
+      <protected>false</protected>
+      <valueType>NUMBER</valueType>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
