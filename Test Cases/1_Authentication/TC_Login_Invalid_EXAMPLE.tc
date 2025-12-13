@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Test with invalid credentials</description>
+   <name>TC_Login_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f0e9d8c7-b6a5-4f3e-2d1c-b0a9f8e7d6c5</testCaseGuid>
+   <testSteps>
+      <TestStep>
+         <guid>step1-guid</guid>
+         <keyword>WebUI.openBrowser</keyword>
+         <arguments>
+            <argument>
+               <name>url</name>
+               <value>''</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step2-guid</guid>
+         <keyword>WebUI.navigateToUrl</keyword>
+         <arguments>
+            <argument>
+               <name>url</name>
+               <value>'https://your-app-url.com/login'</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step3-guid</guid>
+         <keyword>WebUI.setText</keyword>
+         <arguments>
+            <argument>
+               <name>to</name>
+               <value>findTestObject('Object Repository/Login/input_username')</value>
+            </argument>
+            <argument>
+               <name>text</name>
+               <value>'invalid_user'</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step4-guid</guid>
+         <keyword>WebUI.setText</keyword>
+         <arguments>
+            <argument>
+               <name>to</name>
+               <value>findTestObject('Object Repository/Login/input_password')</value>
+            </argument>
+            <argument>
+               <name>text</name>
+               <value>'wrong_password'</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step5-guid</guid>
+         <keyword>WebUI.click</keyword>
+         <arguments>
+            <argument>
+               <name>to</name>
+               <value>findTestObject('Object Repository/Login/button_login')</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step6-guid</guid>
+         <keyword>WebUI.verifyTextPresent</keyword>
+         <arguments>
+            <argument>
+               <name>text</name>
+               <value>'Invalid credentials'</value>
+            </argument>
+            <argument>
+               <name>flowControl</name>
+               <value>true</value>
+            </argument>
+         </arguments>
+      </TestStep>
+      <TestStep>
+         <guid>step7-guid</guid>
+         <keyword>WebUI.closeBrowser</keyword>
+         <arguments/>
+      </TestStep>
+   </testSteps>
+</TestCaseEntity>

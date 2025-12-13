@@ -4,10 +4,10 @@ echo    RUNNING KATALON FULL REGRESSION SUITE
 echo ==========================================
 
 set KATALON_PATH="C:\Users\HP\.katalon\packages\KSE-10.4.2\katalonc.exe"
-set PROJECT_PATH="c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON"
+set PROJECT_PATH="c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON\TUBES-KATALON"
 
 echo Starting Full Regression Test Suite...
-%KATALON_PATH% -noSplash -runMode=console -projectPath=%PROJECT_PATH% -retry=0 -testSuitePath="Test Suites/TS_Full_Regression" -executionProfile="default" -browserType="Chrome"
+%KATALON_PATH% -noSplash -runMode=console -projectPath=%PROJECT_PATH% -retry=0 -testSuitePath="Test Suites/TS_Full_Regression" -executionProfile="default" -browserType="Chrome" --config -webui.autoUpdateDrivers=true
 
 echo.
 echo Test execution completed!
