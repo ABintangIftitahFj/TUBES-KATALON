@@ -2,7 +2,7 @@
 #    KATALON PROJECT CLEANUP & VALIDATOR
 # ========================================
 
-$PROJECT_PATH = "c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON"
+$PROJECT_PATH = "c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON\TUBES-KATALON"
 
 function Clean-KatalonCache {
     Write-Host "========================================"

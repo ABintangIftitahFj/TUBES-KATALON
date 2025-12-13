@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Test viewing articles on the public page</description>
-   <name>TC_View_Articles</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c7d6e5f4-a3b2-c1d0-e9f8-a7b6c5d4e3b2</testCaseGuid>
-</TestCaseEntity>

@@ -3,7 +3,7 @@
 # ========================================
 
 $KATALON_PATH = "C:\Users\HP\.katalon\packages\KSE-10.4.2\katalonc.exe"
-$PROJECT_PATH = "c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON"
+$PROJECT_PATH = "c:\KULIAH\SEMESTER 5\SQA\TUBES KATALON\TUBES-KATALON"
 
 function Run-SmokeTest {
     Write-Host "========================================"
